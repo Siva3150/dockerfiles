@@ -1,5 +1,6 @@
 ARG version
-FROM almalinux:${version}
+#FROM almalinux:${version}
+FROM almalinux:${version:-8}
 ARG username
 RUN adduser $username
 USER $username
